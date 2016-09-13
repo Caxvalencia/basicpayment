@@ -1,0 +1,24 @@
+{
+	"name": "testplacetopay/basicpayment",
+	"description": "A basic payment client with a webservice of PlaceToPlay company",
+	"type": "library",
+	"license": "MIT",
+	"authors": [
+		{
+			"name": "Cristian Alexis Salazar Valencia",
+			"email": "caxvalencia@gmail.com"
+		}
+	],
+	"autoload": {
+		"psr-4": {
+			"TestPlaceToPay\\BasicPayment\\": "src/"
+		}
+	},
+	"require": {
+		"php": "^5.5 || ^7.0",
+		"doctrine/cache": "^1.6"
+	},
+	"require-dev": {
+		"larapack/dd": "1.*"
+	}
+}
