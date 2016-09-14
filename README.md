@@ -2,7 +2,7 @@
 A basic payment client with a webservice of PlaceToPlay company
 
 ## Installing
-For install, run command-line your composer with:
+For install:
 
 ```php
 composer require testplacetopay/basicpayment
