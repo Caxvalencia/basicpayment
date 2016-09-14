@@ -76,7 +76,7 @@ class API {
 		if( $this->cache->contains( self::BANK_LIST ) )
 			return $this->cache->fetch( self::BANK_LIST );
 
-		$res = $this->watchRequest( function() use ( $params ) {
+		$res = $this->watchRequest( function() {
 			$data = $this->soapClient->getBankList([ 'auth' => $this->auth->toArray() ]);
 			$this->cache->save( self::BANK_LIST, $data, Config::get( 'BANK_LIST_TIME_LIFE' ) );
 
