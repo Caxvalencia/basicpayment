@@ -1,5 +1,5 @@
 # Demo
-For install, run command-line your composer with:
+For install:
 
 ```php
 composer install
