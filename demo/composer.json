@@ -1,0 +1,15 @@
+{
+	"name": "demo",
+	"description": "A basic payment client with a webservice of PlaceToPlay company",
+	"license": "MIT",
+	"authors": [
+		{
+			"name": "Cristian Alexis Salazar Valencia",
+			"email": "caxvalencia@gmail.com"
+		}
+	],
+	"require": {
+		"php": "^5.5 || ^7.0",
+		"testplacetopay/basicpayment": "^0.1.0"
+	}
+}

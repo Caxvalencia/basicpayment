@@ -1,5 +1,5 @@
 <?php
-require "../vendor/autoload.php";
+require __DIR__ . "/vendor/autoload.php";
 
 $basicPayment = new TestPlaceToPay\BasicPayment\BasicPayment([
 	'DEF_SERVICE'	=> "https://test.placetopay.com/soap/pse/?wsdl",
@@ -27,7 +27,7 @@ if( isset( $_POST[ 'action' ] ) && $_POST[ 'action' ] === 'create_transaction' )
 		'shipping'		=> ( new \TestPlaceToPay\BasicPayment\Client\Models\Person() )->test()
 	], $_POST ) );
 
-	if( $res->returnCode === 'SUCCESS' ) {
+	if( $res && $res->returnCode === 'SUCCESS' ) {
 		// To do thing before exit
 		header( 'Location: ' . $res->bankUrl );
 		exit();
