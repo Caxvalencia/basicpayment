@@ -15,7 +15,7 @@
 		}
 	},
 	"require": {
-		"php": "^5.5 || ^7.0",
+		"php": "^7.0",
 		"doctrine/cache": "^1.6"
 	},
 	"require-dev": {
